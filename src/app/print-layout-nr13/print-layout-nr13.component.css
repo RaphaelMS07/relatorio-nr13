@@ -1,0 +1,41 @@
+.a4{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 1030px;
+    print-color-adjust: exact; 
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 650px;
+    height: 900px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.info-cliente{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-equip {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.check-area{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;    
+}
