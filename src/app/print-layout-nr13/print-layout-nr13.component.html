@@ -32,28 +32,83 @@
                 <div>Pressão teste (PTH -BAR): var pressaoTest</div>
                 <div>Pressão trabalho (PTA - BAR): var pressaoTrab</div>
             </div>
-            <div>
-                <span>Exame visual</span>
-                <label for="bom"></label>
-                <input type="radio" name="visual" value="bom">
-                <label for="ruim"></label>
-                <input type="radio" name="visual" value="ruim">
+            <div class="flex column">
+                <span style="text-align: center;" class="mt-1">Exame visual</span>
+                <div class="flex ard" style="width: 220px; margin: auto;">
+                    <div>
+                        <label for="bom">Bom </label>
+                        <input type="radio" name="visual" value="bom">
+                    </div>
+                    <div>
+                        <label for="ruim">Ruim</label>
+                        <input type="radio" name="visual" value="ruim">
+                    </div>
+
+                </div>
             </div>
-            <div>
-                <h3>Resultado do teste / Tipo de teste</h3>
+        </div>
+        <div>
+            <h3>Resultado do teste / Tipo de teste</h3>
+            <div class="flex ard">
                 <div>
                     <label for="ultrassom">Ultrassom</label>
                     <input type="checkbox" id="ultrassom" name="ultrassom">
                 </div>
                 <span>Espessura da chapa: var 999mm</span>
                 <span>Hidrostático PTH: var 999Br</span>
-            </div>            
+            </div>
+        </div>
+        <div class="mt-3">
+            <span class="mt-2">Equipamento</span>
+            <div class="img-area">
+            </div>
+            <span class="mt-2">Bomba em teste</span>
+            <div class="img-area">
+            </div>
         </div>
     </div>
 </div>
 <div class="a4">
 
     <div class="content-container">
+        <h3 style="text-align: center;">Resultado do teste</h3>
+        <div class="check-area" style="width: 300px; margin: 0 auto;">
+            <div class="flex">
+                <label for="aprovado" class="mr-1"> Aprovado </label>
+                <input type="radio" id="aprovado" name="resultado">
+            </div>
+            <div class="flex">
+                <label for="reprovado" class="mr-1"> Reprovado </label>
+                <input type="radio" id="reprovado" name="resultado">
+            </div>
+        </div>
+
+        <div class="cert-area">
+            <div class="flex">
+                <span class="cert-item">Manômetro cert. Nº: 9999999999999999</span>
+                <span class="cert-item"> Válvula seg. cert. Nº: 9999999999999999</span>
+
+            </div>
+            <div class="flex">
+                <span class="cert-item">Pressostato cert. Nº: 9999999999999999</span>
+                <span class="cert-item">Válvula piloto cert. Nº: 9999999999999999</span>
+            </div>
+        </div>
+
+        <div class="ass-area">
+            <span>Técnico responsável pelo teste</span>
+            <div class="mt-4 flex">
+                <span>Ass.</span>
+                <div class="ass"></div>
+            </div>
+        </div>
+        <div class="ass-area">
+            <span>Engenheiro responsável</span>
+            <div class="mt-4 flex">
+                <span>Ass.</span>
+                <div class="ass"></div>
+            </div>
+        </div>
 
     </div>
 

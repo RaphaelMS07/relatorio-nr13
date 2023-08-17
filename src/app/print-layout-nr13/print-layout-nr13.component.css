@@ -39,3 +39,41 @@
     display: flex;
     justify-content: space-around;    
 }
+
+.input-number{
+    width: 50px;
+}
+
+.img-area {
+    margin: 5px auto;
+    border: solid 1px black;
+    width: 600px;
+    height: 220px;
+}
+
+.cert-area{
+    width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+}
+
+.cert-item{
+    
+    padding: 5px;
+    width: 320px;
+    border: solid 1px black;
+}
+
+.ass-area{
+    width: 400px;
+    margin: 50px auto;
+    font-size: 18px;
+}
+
+.ass {
+    width: 400px;
+    border: 1px black;
+    border-style: none none solid none;
+}

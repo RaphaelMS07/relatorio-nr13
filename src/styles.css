@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.ard{
+    justify-content: space-around;
+}
+
 .column{
     flex-direction: column;
 }
@@ -10,10 +14,29 @@
     flex-direction: row-reverse;
 }
 
+.alinhar-inicio {
+
+    /* align-self: self-start; */
+}
+
 .mr-1 {
     margin-right: 5px;
 }
 
 .mr-2 {
     margin-right: 10px;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+.mt-3 {
+    margin-top: 20px;
+}
+.mt-4 {
+    margin-top: 40px;
 }
