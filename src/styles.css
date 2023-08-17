@@ -1,9 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+
 .flex{
     display: flex;
 }
 
 .ard{
     justify-content: space-around;
+}
+
+.btw {
+    justify-content: space-between;
 }
 
 .column{
@@ -13,12 +26,7 @@
 .row-reverse {
     flex-direction: row-reverse;
 }
-
-.alinhar-inicio {
-
-    /* align-self: self-start; */
-}
-
+ 
 .mr-1 {
     margin-right: 5px;
 }

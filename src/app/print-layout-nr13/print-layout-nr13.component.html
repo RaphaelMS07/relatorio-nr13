@@ -1,6 +1,6 @@
 <div class="a4">
-    <h2 class="title">Relatório de inspeção NR13</h2>
-    <h3 style="text-align: end; margin-right: 20px ;">Nº 0000</h3>
+    <h2 class="title" style="margin: 20px 0;">Relatório de inspeção NR13</h2>
+    <h3 style="text-align: end; margin:10px 20px ;">Nº 0000</h3>
     <div class="content-container">
         <div class="info-cliente">
             <div>Empresa: var nome</div>
@@ -12,43 +12,41 @@
             <div class="check-area">
                 <div class="flex">
                     <label for="reservatorio" class="mr-1"> Reservatório </label>
-                    <input type="checkbox" id="reservatorio" name="reservatorio" checked>
+                    <input type="checkbox" id="reservatorio" name="reservatorio" checked class="check-icon">
                 </div>
                 <div class="flex">
                     <label for="rede" class="mr-1"> Rede de ar </label>
-                    <input type="checkbox" id="rede" name="rede">
+                    <input type="checkbox" id="rede" name="rede" class="check-icon">
                 </div>
                 <div class="flex">
                     <label for="caldeira" class="mr-1"> Caldeira </label>
-                    <input type="checkbox" id="caldeira" name="caldeira">
+                    <input type="checkbox" id="caldeira" name="caldeira" class="check-icon">
                 </div>
             </div>
             <div>
-                <div>Modelo: var modelo</div>
-                <div>Ano de fabricação: var anoFab</div>
-                <div>Nº Série: var serial</div>
-                <div>Código do projeto: var projectCode</div>
-                <div>Ano edição: var anoEdicao</div>
-                <div>Pressão teste (PTH -BAR): var pressaoTest</div>
-                <div>Pressão trabalho (PTA - BAR): var pressaoTrab</div>
+                <div class="mt-3" style="font-weight: bold;">Modelo:                        <span style="font-weight: 100;"> var modelo</span></div>
+                <div class="mt-1" style="font-weight: bold;">Ano de fabricação:             <span style="font-weight: 100;">var anoFab</span></div>
+                <div class="mt-1" style="font-weight: bold;">Nº Série:                      <span style="font-weight: 100;">var serial</span></div>
+                <div class="mt-1" style="font-weight: bold;">Código do projeto:             <span style="font-weight: 100;">var projectCode</span></div>
+                <div class="mt-1" style="font-weight: bold;">Ano edição:                    <span style="font-weight: 100;">var anoEdicao</span></div>
+                <div class="mt-1" style="font-weight: bold;">Pressão teste (PTH -BAR):      <span style="font-weight: 100;">var pressaoTest</span></div>
+                <div class="mt-1" style="font-weight: bold;">Pressão trabalho (PTA - BAR):  <span style="font-weight: 100;">var pressaoTrab</span></div>
+                <div class="mt-2 flex" style="font-weight: bold; align-items: baseline;">Exame visual: 
+                    <label for="bom" style="margin: 0 10px;">Bom
+                        <input type="radio" name="visual" id="bom" value="bom" class="radio-icon">
+                    </label>
+                    <label for="ruim" style="margin: 0 10px;">Ruim
+                        <input type="radio" name="visual" id="ruim" value="ruim" class="radio-icon">
+                    </label>                
+                </div>
+               
             </div>
             <div class="flex column">
-                <span style="text-align: center;" class="mt-1">Exame visual</span>
-                <div class="flex ard" style="width: 220px; margin: auto;">
-                    <div>
-                        <label for="bom">Bom </label>
-                        <input type="radio" name="visual" value="bom">
-                    </div>
-                    <div>
-                        <label for="ruim">Ruim</label>
-                        <input type="radio" name="visual" value="ruim">
-                    </div>
-
-                </div>
+                
             </div>
         </div>
         <div>
-            <h3>Resultado do teste / Tipo de teste</h3>
+            <h3 style="text-align: center; margin: 20px auto;">Resultado do teste / Tipo de teste</h3>
             <div class="flex ard">
                 <div>
                     <label for="ultrassom">Ultrassom</label>
@@ -58,12 +56,14 @@
                 <span>Hidrostático PTH: var 999Br</span>
             </div>
         </div>
-        <div class="mt-3">
-            <span class="mt-2">Equipamento</span>
-            <div class="img-area">
+        <div class="mt-3 flex btw">
+            <div>
+                <span class="mt-2">Equipamento</span>
+                <div class="img-area"></div>
             </div>
-            <span class="mt-2">Bomba em teste</span>
-            <div class="img-area">
+            <div>
+                <span class="mt-2">Bomba em teste</span>
+                <div class="img-area"></div>
             </div>
         </div>
     </div>
@@ -75,23 +75,23 @@
         <div class="check-area" style="width: 300px; margin: 0 auto;">
             <div class="flex">
                 <label for="aprovado" class="mr-1"> Aprovado </label>
-                <input type="radio" id="aprovado" name="resultado">
+                <input type="radio" id="aprovado" name="resultado" class="radio-icon">
             </div>
             <div class="flex">
                 <label for="reprovado" class="mr-1"> Reprovado </label>
-                <input type="radio" id="reprovado" name="resultado">
+                <input type="radio" id="reprovado" name="resultado" class="radio-icon">
             </div>
         </div>
 
         <div class="cert-area">
             <div class="flex">
-                <span class="cert-item">Manômetro cert. Nº: 9999999999999999</span>
-                <span class="cert-item"> Válvula seg. cert. Nº: 9999999999999999</span>
+                <span class="cert-item">Manômetro cert. Nº: 99999999999999</span>
+                <span class="cert-item"> Válvula seg. cert. Nº: 99999999999999</span>
 
             </div>
             <div class="flex">
-                <span class="cert-item">Pressostato cert. Nº: 9999999999999999</span>
-                <span class="cert-item">Válvula piloto cert. Nº: 9999999999999999</span>
+                <span class="cert-item">Pressostato cert. Nº: 99999999999999</span>
+                <span class="cert-item">Válvula piloto cert. Nº: 99999999999999</span>
             </div>
         </div>
 
