@@ -1,0 +1,28 @@
+.form-container {
+    width: 600px;
+    margin: 60px auto;
+    background-color: bisque;
+}
+
+.check-area{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.check-icon {
+    width: 17px;
+    height: 17px;
+}
+
+.radio-icon {
+    width: 17px;
+    height: 17px;
+}
+
+
+@media (max-width: 600px) {
+    .form-container{
+        width: 300px;
+    }
+}

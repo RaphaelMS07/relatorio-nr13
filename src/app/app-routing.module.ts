@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'print-page',
     loadChildren: () => import("./print-layout-nr13/print-layout-nr13.module").then((m) => m.PrintLayoutNr13Module)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import("./nr13-form/nr13-form.module").then((m) => m.Nr13FormModule)
   }
 ];
 

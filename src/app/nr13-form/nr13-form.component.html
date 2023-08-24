@@ -1,0 +1,68 @@
+<div class="form-container">
+    <form [formGroup]="nr13">
+        <div class="cliente-area">
+            <label for="nome">Empresa</label>
+            <input type="text" id="nome" formControlName="nome">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" formControlName="cnpj">
+            <label for="endereco">Emdereço</label>
+            <input type="text" id="endereco" formControlName="endereco">
+        </div>
+
+        <div class="check-area">
+            <div class="flex">
+                <label for="reservatorio" class="mr-1"> Reservatório </label>
+                <input type="checkbox" id="reservatorio" formControlName="reservatorioCheck" class="check-icon">
+            </div>
+            <div class="flex">
+                <label for="rede" class="mr-1"> Rede de ar </label>
+                <input type="checkbox" id="rede" formControlName="redeCheck" class="check-icon">
+            </div>
+            <div class="flex">
+                <label for="caldeira" class="mr-1"> Caldeira </label>
+                <input type="checkbox" id="caldeira" formControlName="caldeiraCheck" class="check-icon">
+            </div>
+        </div>
+
+        <div class="equip-area">
+            <div>
+                <label for="modelo">Modelo</label>
+                <input type="text" formControlName="modelo">
+
+                <label for="anoFabricacao"> Ano de fabricação</label>
+                <input type="date" formControlName="anoFabricacao">
+
+                <label for="numSerie">Nº de série</label>
+                <input type="text" formControlName="numSerie">
+
+                <label for="codProjecto">Código do projecto</label>
+                <input type="text" formControlName="codProjecto">
+
+                <label for="anoEdicao">Ano edição</label>
+                <input type="text" formControlName="anoEdicao">
+
+                <label for="pressTeste">Pessão teste</label>
+                <input type="text" formControlName="pressTeste">
+
+                <label for="pressTrab">Pressao Trabalho</label>
+                <input type="text" formControlName="pressTrab">
+                
+                <label for="exameVisual"> Exame visutal
+                    <input type="radio">
+                    <input type="radio">
+                </label>
+            </div>
+        </div>
+
+        <div class="resultado-area">
+
+
+            
+
+        </div>
+
+
+    </form>
+
+
+</div>
