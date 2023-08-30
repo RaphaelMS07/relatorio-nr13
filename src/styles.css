@@ -26,6 +26,10 @@ body {
 .row-reverse {
     flex-direction: row-reverse;
 }
+
+.margin-1 {
+    margin: 5px;
+}
  
 .mr-1 {
     margin-right: 5px;
@@ -47,4 +51,28 @@ body {
 }
 .mt-4 {
     margin-top: 40px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+.ok-button {
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    color: #daeeff;
+    background-color: #1e67cf;
+    align-self: flex-end;
+    transition: all .2s;
+}
+.ok-button:hover{
+    background-color: #3d84e8;
 }

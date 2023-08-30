@@ -1,14 +1,43 @@
 .form-container {
-    width: 600px;
+    padding: 30px;
+    width: 550px;
     margin: 60px auto;
     background-color: bisque;
 }
 
+.cliente-area{
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
 .check-area{
+    margin: 20px 0;
     font-size: 18px;
     display: flex;
     justify-content: space-around;    
 }
+
+.equip-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-area{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-area{
+    display: flex;   
+}
+
+.cert-area{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .check-icon {
     width: 17px;
@@ -19,6 +48,25 @@
     width: 17px;
     height: 17px;
 }
+.input-small{
+    width: 33%;
+}
+.input-medium{
+    width: 50%;
+}
+.input-large{
+    width: 67%;
+}
+.input-full{
+    width: 100%;
+}
+.input-style{
+    padding: 2px;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+}
+
 
 
 @media (max-width: 600px) {

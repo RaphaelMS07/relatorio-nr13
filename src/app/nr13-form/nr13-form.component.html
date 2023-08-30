@@ -1,12 +1,12 @@
 <div class="form-container">
-    <form [formGroup]="nr13">
+    <form [formGroup]="nr13" (ngSubmit)="submitForm()">
         <div class="cliente-area">
-            <label for="nome">Empresa</label>
-            <input type="text" id="nome" formControlName="nome">
-            <label for="cnpj">CNPJ</label>
-            <input type="text" id="cnpj" formControlName="cnpj">
-            <label for="endereco">Emdereço</label>
-            <input type="text" id="endereco" formControlName="endereco">
+            <label for="nome" class="mb-1">Empresa</label>
+            <input type="text" id="nome" formControlName="nome" class="input-style mb-2">
+            <label for="cnpj" class="mb-1">CNPJ</label>
+            <input type="text" id="cnpj" formControlName="cnpj" class="input-style mb-2 ">
+            <label for="endereco" class="mb-1">Endereço</label>
+            <input type="text" id="endereco" formControlName="endereco" class="input-style mb-2">
         </div>
 
         <div class="check-area">
@@ -25,42 +25,118 @@
         </div>
 
         <div class="equip-area">
-            <div>
-                <label for="modelo">Modelo</label>
-                <input type="text" formControlName="modelo">
-
-                <label for="anoFabricacao"> Ano de fabricação</label>
-                <input type="date" formControlName="anoFabricacao">
-
-                <label for="numSerie">Nº de série</label>
-                <input type="text" formControlName="numSerie">
-
-                <label for="codProjecto">Código do projecto</label>
-                <input type="text" formControlName="codProjecto">
-
-                <label for="anoEdicao">Ano edição</label>
-                <input type="text" formControlName="anoEdicao">
-
-                <label for="pressTeste">Pessão teste</label>
-                <input type="text" formControlName="pressTeste">
-
-                <label for="pressTrab">Pressao Trabalho</label>
-                <input type="text" formControlName="pressTrab">
-                
-                <label for="exameVisual"> Exame visutal
-                    <input type="radio">
-                    <input type="radio">
-                </label>
+            <div class="flex btw">
+                <div class="flex column  input-large margin-1">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" formControlName="modelo" class="input-style">
+                </div>
+                <div class="flex column input-small margin-1">
+                    <label for="anoFabricacao "> Ano de fabricação</label>
+                    <input type="date" formControlName="anoFabricacao" class="input-style">
+                </div>
             </div>
+            <div class="flex btw">
+                <div class="flex column input-medium margin-1">
+                    <label for="numSerie">Nº de série</label>
+                    <input type="text" formControlName="numSerie" class="input-style">
+                </div>
+                <div class="flex column input-medium margin-1">
+                    <label for="codProjecto">Código do projeto</label>
+                    <input type="text" formControlName="codProjeto" class="input-style">
+                </div>
+
+            </div>
+                <div class="flex btw">
+                    <div class="flex column input-small margin-1">
+                        <label for="anoEdicao">Ano edição</label>
+                        <input type="text" formControlName="anoEdicao" class="input-style">
+                    </div>
+                    <div class="flex column input-small margin-1">
+                        <label for="pressTeste">Pressão teste</label>
+                        <input type="text" formControlName="pressTeste" class="input-style">
+                    </div>
+                    <div class="flex column input-small margin-1">
+                        <label for="pressTrab">Pressão Trabalho</label>
+                        <input type="text" formControlName="pressTrab" class="input-style">
+                    </div>
+                </div>
+                
+                <label for="exameVisual" class="margin-1"> Exame visutal
+                    <label for="bom" style="margin: 0 10px;">Bom 
+                        <input type="radio" name="visual" id="bom" value="bom" class="radio-icon" formControlName="exameVisual">
+                    </label>
+                    <label for="ruim" style="margin: 0 10px;"> Ruim
+                        <input type="radio" name="visual" id="ruim" value="ruim" class="radio-icon" formControlName="exameVisual">
+                    </label>   
+                </label>
+            
         </div>
 
         <div class="resultado-area">
+            <div class="check-area">
+                <div class="flex">
+                    <label for="ultrassom" class="mr-1"> Ultrassom </label>
+                    <input type="checkbox" id="ultrassom" formControlName="ultrassomCheck" class="check-icon">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="input-medium margin-1">
+                    <label for="espessuraChapa">Espessura da chapa:</label>
+                    <input type="number" formControlName="espessuraChapa" class="input-style">mm
+                </div>
+                <div class="input-medium margin-1">
+                    <label for="hidrostatico">Hidrostático PTH:</label>
+                    <input type="number" formControlName="hidrostatico" class="input-style">Br
+                </div>
+            </div>
 
+            <div class="img-area">
+                <div class="flex column margin-1">  
+                    <label for="imgFileEquipamento"> Equipamento </label>
+                    <input type="file" formControlName="imgFileEquipamento">
+                </div>
+                <div class="flex column margin-1 ">
+                    <label for="imgFileBombaTeste"> Bomba em teste </label>
+                    <input type="file" formControlName="imgFileBombaTeste">
+                </div>
+            </div>
+
+            <div>
+                <div class="margin-1">Resultado do teste
+                    <label for="aprovado" style="margin: 0 10px;">Aprovado
+                        <input type="radio" name="visual" id="aprovado" value="aprovado" class="radio-icon" formControlName="resultadoTeste">
+                    </label>
+                    <label for="reprovado" style="margin: 0 10px;">Reprovado
+                        <input type="radio" name="visual" id="reprovado" value="reprovado" class="radio-icon" formControlName="resultadoTeste">
+                    </label>                
+                </div>
+            </div>
+
+            <div class="cert-area margin-1">
+                
+                <label for="manometroCert" class="mb-1">Número de certificado do Manômetro</label>
+                <input type="text" formControlName="manometroCert" class="input-style mb-2">
+
+                <label for="valvulaSegCert" class="mb-1">Número de certificado da Válvula de seguimento </label>
+                <input type="text" formControlName="valvulaSegCert" class="input-style mb-2">
+
+                <label for="pressostatoCert" class="mb-1">Número de certificado do Pressostato</label>
+                <input type="text" formControlName="pressostatoCert" class="input-style mb-2">
+
+                <label for="valvulaPilotoCert" class="mb-1">Número de certificado da Valvula piloto</label>
+                <input type="text" formControlName="valvulaPilotoCert" class="input-style mb-2">
+
+            </div>
+
+            <!-- <div class="ass-area">
+                <h4>Area de de assinatura digital (a contrstuir)</h4>
+                <div>Técnico responsável pelo teste</div>
+                <div>Engenheiro responsável</div>
+            </div> -->
 
             
-
+            <button type="submit" class="ok-button"> Criar Relatório</button>
         </div>
-
 
     </form>
 
