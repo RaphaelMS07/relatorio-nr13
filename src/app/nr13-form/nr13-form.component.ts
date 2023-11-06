@@ -31,9 +31,11 @@ export class Nr13FormComponent implements OnInit {
     hidrostatico: new FormControl(),
     imgFileEquipamento: new FormControl(),
     imgFileBombaTeste: new FormControl(),
-    resultadoTeste: new FormControl("") //a continuar
-
-
+    resultadoTeste: new FormControl(""),
+    nanometroCert: new FormControl(''),
+    valvulaSegCert: new FormControl(''),
+    pressostatoCert: new FormControl(''),
+    valvulaPilotoCert: new FormControl('')
   })
 
 

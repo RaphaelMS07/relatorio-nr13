@@ -2,7 +2,8 @@
     padding: 30px;
     width: 550px;
     margin: 60px auto;
-    background-color: bisque;
+    background-color: rgb(235, 223, 157);
+    border-radius: 5px;
 }
 
 .cliente-area{
